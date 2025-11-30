@@ -9,7 +9,11 @@
     "lint": "next lint",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
+    "db:seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts",
     "db:studio": "prisma studio"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.24.0",
@@ -38,7 +42,9 @@
     "stripe": "^14.18.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
-    "zustand": "^4.5.2"
+    "zustand": "^4.5.2",
+    "@monaco-editor/react": "^4.6.0",
+    "pyodide": "^0.25.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
